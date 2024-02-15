@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flexbox wrap 0 — children overflowing</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background: pink;
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      article {
+        flex: 200px;
+        padding: 10px;
+        margin: 10px;
+        background: pink;
+      }
+
+      /* Add your flexbox CSS below here */
+
+      section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+      }
+
+      article {
+        
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sample flexbox example</h1>
+    </header>
+
+    <section>
+      <article>
+        <h2>First article</h2>
+
+        <p>Test 1</p>
+      </article>
+
+      <article>
+        <h2>Second article</h2>
+        <p>Test 2</p>      
+      </article>
+
+      <article>
+        <h2>Third article</h2>
+        <p>Test 3</p>
+        <p>Test 3a</p>
+      </article>
+
+      <article>
+        <h2>Fourth article</h2>
+        <p>Test 4</p>
+      </article>
+
+      <article>
+        <h2>Fifth article</h2>
+        <p>Test 5</p>
+      </article>
+
+      <article>
+        <h2>Sixth article</h2>
+        <p>Test 6</p>
+        <p>Test 6a</p>
+      </article>
+
+      <article>
+        <h2>Seventh article</h2>
+
+        <p>Test 7</p>
+      </article>
+
+      <article>
+        <h2>Eighth article</h2>
+        <p>Test 8</p>
+      </article>
+
+      <article>
+        <h2>Ninth article</h2>
+
+        <p>Test 9</p>
+        <p>Test 9a</p>
+      </article>
+
+      <article>
+        <h2>Tenth article</h2>
+        <p>Test 10</p>
+      </article>
+
+      <article>
+        <h2>Eleventh article</h2>
+        <p>Test 11</p>
+      </article>
+
+      <article>
+        <h2>Twelfth article</h2>
+
+        <p>Test 12</p>
+        <p>Test 12a</p>
+      </article>
+    </section>
+  </body>
+</html>

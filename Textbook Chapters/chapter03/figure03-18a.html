@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Single Page Navigation</title>
+   <style>
+      .page-section {
+         display: none;
+      }
+
+      .active {
+         display: block;
+      }
+   </style>
+</head>
+<body>
+
+   <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('about')">About Us</a>
+      <a href="#" onclick="showPage('products')">Products</a>
+      <a href="#" onclick="showPage('contact')">Contact Us</a>
+   </nav>
+
+   <section id="home" class="page-section active">
+      <h1>Home</h1>
+      <p>This is the Home page content.</p>
+   </section>
+
+   <section id="about" class="page-section">
+      <h1>About Us</h1>
+      <p>This is the About Us page content.</p>
+   </section>
+
+   <section id="products" class="page-section">
+      <h1>Products</h1>
+      <p>This is the Products page content.</p>
+   </section>
+
+   <section id="contact" class="page-section">
+      <h1>Contact Us</h1>
+      <p>This is the Contact Us page content.</p>
+   </section>
+
+   <script>
+      function showPage(pageId) {
+         // Hide all sections
+         var sections = document.querySelectorAll('.page-section');
+         sections.forEach(function(section) {
+            section.classList.remove('active');
+         });
+
+         // Show the selected section
+         var selectedSection = document.getElementById(pageId);
+         selectedSection.classList.add('active');
+      }
+   </script>
+
+</body>
+</html>
+
+
